@@ -1,0 +1,27 @@
+@media screen and (max-width: 420px){
+    .container{
+        width: 320px;
+    }
+    header p{
+        font-size: .9em;
+        text-align: center;
+    }
+    .login-button a.RegSite{
+        margin-left: 10px;
+    }
+    .menu a{
+        margin: 10px auto;
+    }
+    .menu{
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+    }
+    .threeIcoms h2{
+        font-size: 1.3em;
+    }
+    .threeIcoms h3{
+        font-size: 1em;
+    }
+
+}

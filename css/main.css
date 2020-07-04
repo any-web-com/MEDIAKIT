@@ -1,0 +1,488 @@
+    :root{
+        --colspace: 50px; (через переменную задаю межколоночній интервал);
+    }
+    *{
+        box-sizing: border-box;
+    }
+    body{
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    section{
+        padding: 50px 0;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    h1{
+        font-family: "Publica Play Regular";
+    }
+    h2, h3, h4{
+        font-family: "Product Sans Bold", sans-serif;
+    }
+    p{
+        font-family: Roboto, sans-serif;
+    }
+    li {
+        font-family: 'Product Sans Regular', sans-serif;
+    }
+    a {
+        font-family: "Product Sans Regular", sans-serif;
+        text-decoration: none;
+    }
+    td{
+        font-family: Roboto, sans-serif;
+    }
+
+
+    .container {
+      width: 1200px;
+      margin: 0 auto !important;
+    }
+    .row{
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    .justify-between{
+        -ms-justify-content: space-between;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .justify-center{
+        align-items: center;
+        justify-content: center;
+    }
+    .justify-around{
+        justify-content: space-around;
+    }
+    .justify-start{
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
+    }
+    .align-start{
+        align-items: flex-start;
+    }
+    .align-center{
+        align-items: center !important;
+    }
+
+    .col-1{width: calc(100% / 1 - ( 1/1*0 * var(--colspace) ) );}
+    .col-2{width: calc(100% / 2 - ( 1/2*1 * var(--colspace) ) );}
+    .col-3{width: calc(100% / 3 - ( 1/3*2 * var(--colspace) ) );}
+    .col-4{width: calc(100% / 4 - ( 1/4*3 * var(--colspace) ) );}
+    .col-5{width: calc(100% / 5 - ( 1/5*4 * var(--colspace) ) );}
+    .col-6{width: calc(100% / 6 - ( 1/6*5 * var(--colspace) ) );}
+
+    .col-2_3{width: calc(100% / 3*2 - ( 1/3*2 * var(--colspace) ) );}
+    .col{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .center{
+        text-align: center;
+    }
+    .left{
+        text-align: left;
+    }
+    .vw100{
+        width: 100vw !important;
+    }
+    .w_45{
+        width: 45%;
+    }
+    .no_wrap{
+        flex-wrap: nowrap !important;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    .black{
+        color: black;
+    }
+    .margin-top{
+        margin-top: var(--marginspace) !important;
+    }
+/*-------------header------------------------*/
+    header {
+        font-family:'Product Sans Regular';
+        font-size: 19px;
+
+    }
+    .hedInfo{
+        height: auto;
+        padding: 5px 0 5px;
+    }
+    .telegram {
+        font-size: 1em;
+        height: 50px;
+        text-decoration: none;
+        color: black;
+        margin-right: 10px;
+    }
+    .strHed{
+        font-size: 1em;
+    }
+
+    .whatsapp {
+        font-size: 1em;
+        height: 50px;
+        text-decoration: none;
+        color: black;
+    }
+    .telegram img {
+        width: 20px;
+        height: 20px;
+        margin: 0 3px 0 0 ;
+    }
+    .whatsapp img {
+        width: 20px;
+        height: 20px;
+        margin: 0 3px 0 0 ;
+    }
+    header p{
+        font-size: 1em;
+        margin: 5px 5px;
+    }
+    .inpSite{
+        text-decoration: none;
+        margin: 5px;
+        color: black;
+    }
+    .RegSite{
+        text-decoration: none;
+        margin: 5px 0;
+        line-height: 48px;
+        width: 180px;
+        height: 48px;
+        border-radius: 5px;
+        background-color: #c94b3b;
+        color: white;
+    }
+    button.RegSite{
+        font-family: "Product Sans Regular";
+        font-weight: 500;
+        font-size: 20px;
+        border: 0;
+        margin-left: 10px;
+        text-align: center;
+        height: auto;
+        cursor: pointer;
+
+    }
+    header nav{
+        background : #CD5B5B;
+        /*height: 66px;*/
+        padding: 15px;
+    }
+    menu{
+        font-size : 1em;
+        color : #FFFFFF;
+        color : rgb(255, 255, 255);
+        margin: 0;
+    }
+    menu a{
+        text-decoration: none;
+        font-size : 1em;
+        color: white;
+        margin: 0 15px;
+    }
+    .logoName{
+        font-family : "Publica Play Regular";
+        /*font-family: "Product Sans Regular";*/
+        letter-spacing: 2px;
+        font-size : 2em;
+        color : #FFFFFF;
+        margin: 0;
+    }
+    .bunner{
+        font-family : 'Roboto';
+        height: 550px;
+    }
+    .bunner h1{
+        font-size: 1.8em;
+        line-height : 50px;
+        color : #1D1D1B;
+        margin-bottom: 50px;
+    }
+    .bunner a.RegSite,
+    .bunner button.RegSite{
+        margin-top: 50px;
+    }
+
+    .hedImg img{
+        height: auto;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        /*background: url("../img/content_writing_intro.png") no-repeat center center;*/
+        /*background-size: contain;*/
+    }
+
+/*-----------------Main----------------------------*/
+
+        main{
+         font-family:'Product Sans Regular';
+         font-size: 24px;
+      }
+      .statistic{
+        background : #FBFBFB;
+        border: 1px solid #E9E9E9;
+
+      }
+      .statistic div h2{
+        font-size: 2em;
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+      .statistic div h3{
+        font-size: 1em;
+        margin-top: 0;
+        margin-bottom: 22px;
+      }
+      .statistic div p{
+        font-family: Roboto;
+        font-size: .8em;
+         padding: 0 20px;
+          margin-top: 0;
+      }
+      .threeIcoms{
+        background: url(../img/bckgrnd.png) no-repeat center center;
+        background-size: 1656px;
+        background-position-x: initial;
+      }
+      .threeIcoms > .col > h2{
+          font-family: "Product Sans Bold";
+          font-size: 2em !important;
+          margin-top: 0;
+          margin-bottom: 24px;
+      }
+      .threeIcoms > .col > h3{
+         font-size: 1em;
+          color : #575756;
+          margin-top: 0;
+          margin-bottom: 40px;
+      }
+    .card h3{
+        font-family: "Product Sans Bold";
+        font-size : 1em;
+        line-height : 50px;
+        text-transform : uppercase;
+        color : #E84A38;
+        margin-top: 0;
+    }
+    .card p{
+        font-family : "Roboto";
+        font-size : .8em;
+        color : #575756;
+        opacity : 0.7;
+        text-align: center;
+        margin-top: 0;
+    }
+    .card img{
+        width: 150px;
+        height: 150px;
+        margin: 30px auto;
+    }
+
+    .maps
+    {
+        background: rgba(251, 251, 251, 1);
+        border: 1px solid rgba(233, 233, 233, 1);
+    }
+    .maps h2{
+        font-family: "Product Sans Bold";
+        font-size: 1.8em;
+        line-height: 50px;
+        margin-bottom: 25px;
+    }
+    .MapImg{
+        width:100%;
+        height:auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cuctomColor{
+        color : rgb(232, 74, 56);
+    }
+    .maps ul{
+        padding-left: 0;
+    }
+    .maps li{
+        font-family : "Roboto";
+        font-size: .8em;
+        line-height : 36px;
+        color : #5E5E5E;
+        list-style: none;
+
+    }
+     .maps li:before{
+        content: '';
+        display: inline-block;
+        height: 17px;
+        width: 17px;
+        background: url(../img/list.png) no-repeat center center;
+         background-size: contain;
+         padding-right: 20px;
+    }
+    .mapsButton{
+        width: 80%;
+        margin: 10px auto 15px 0 !important;
+    }
+
+
+/*--------------------------------review-----------------------------------------*/
+
+    .review{
+        background: url(../img/bckgrnd-revers.png) no-repeat center center;
+        background-size: 1646px;
+        background-position-x: -118px;
+    }
+    .section-title{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .section-title h2{
+        font-family: "Product Sans Bold";
+        font-size: 2em;
+        line-height: 50px;
+        margin: 40px;
+    }
+    .section-title p{
+        font-family: Roboto;
+        font-size: 1em;
+        color : #575756;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .card-review{
+        padding: 20px;
+        box-shadow: 0 0 5px #1D1D1B;
+        border: 1px solid #E83B3B;
+        font-size: .9em;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .card-review h5{
+        font-family: Roboto;
+        font-size: 10px;
+        color : #575756;
+        line-height: 28px;
+        margin: 0;
+    }
+    .card-review h3{
+        font-family: "Product Sans Bold";
+        font-size: 18px;
+        line-height: 21px;
+        margin: 25px 0;
+    }
+    .card-review p{
+        font-family: Roboto;
+        font-size: 12px;
+        line-height: 14px;
+        color : #575756;
+        margin-top: 0;
+    }
+    .card-review > img{
+        height: 10px;
+        width: 100px;
+    }
+    .card-review img:last-child{
+        height: 20px;
+        width: 20px;
+    }
+
+/* --------------------------Footer----------------------------------------------- */
+
+    footer{
+      width: 100%;
+      padding: 20px 0;
+      background-color: #e9eaee;
+      font-size: 20px;
+      font-family: Roboto;
+
+    }
+    .footer_main{
+      color: #606569;
+    }
+
+    .footer-social,
+    .footer-columns{
+      border-bottom: 1px solid #7e7f84;
+      padding: 20px 0;
+    }
+    .footer-columns{
+        align-items: flex-start;
+    }
+
+    .footer-nav a{
+        color: #606569;
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .footer-social{
+        margin: 0;
+    }
+    .footer-social h3{
+        font-family: "Publica Play Regular";
+       /*font-family: "Product Sans Regular";*/
+        letter-spacing: 1px;
+      font-size: 1.3em;
+        line-height: 29px;
+      margin: 0;
+    }
+    .title{
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 16px;
+      margin: 10px 0;
+
+
+
+    }
+    .social-widget{
+        align-items: center;
+        line-height: 0;
+        font-size: .8em;
+
+    }
+    .social-widget p{
+      margin: 0 3px;
+      line-height: 0;
+
+    }
+    .footer_main .social-widget img{
+      height: 20px;
+      width: auto;
+      margin-right: 3px;
+      margin-left: 10px;
+    }
+
+    .footer-credits{
+        margin-top: 20px !important;
+        padding: 10px 0;
+    }
+    .footer-credits img{
+      height: auto;
+      width: 80px;
+      padding: 5px;
+    }
+    .footer-nav{
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .footer-credits nav a{
+        color: #606569;
+        font-family: Roboto;
+        margin-right: 10px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+

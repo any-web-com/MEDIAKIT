@@ -1,0 +1,184 @@
+.hamburger-menu{
+    display: none;
+    height: 0;
+}
+#menu__toggle {
+    opacity: 0;
+  display: none;
+}
+#menu__toggle:checked ~ .menu__btn {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+#menu__toggle:checked ~ .hamburger-menu{
+    display: block;
+    height: auto;
+}
+#menu__toggle:checked ~ #menu__toggle {
+    opacity: 0;
+    display: block;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+    height: auto;
+    padding: 80px 0;
+
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    /*background-color: #616161;*/
+    background-color: #ffffff;
+    transition-duration: .25s;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 0;
+    margin: 0;
+    list-style: none;
+    /*background-color: #ECEFF1;*/
+    background-color: #cd5b5b;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+    z-index: 99;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    /*color: #333;*/
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+    cursor: pointer;
+}
+/*.menu__item:hover {*/
+/*    background-color: #CFD8DC;*/
+/*}*/
+.menu__box .telegram,
+.menu__box .whatsapp{
+    text-align: left;
+    justify-content: left;
+    margin-left: 20px;
+    color: white;
+}
+.menu__box .telegram p,
+.menu__box .whatsapp p{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.menu__box .telegram img,
+.menu__box .whatsapp img{
+    color: white;
+}
+/*================== Submenu ==================================*/
+.sub-menu {
+    display: none;
+    background: inherit;
+    position: absolute;
+    left: 60%;
+    top: 10px;
+    z-index: 5;
+    width: inherit;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+    list-style: none;
+    border-left: 1px solid white;
+    padding-left: 0;
+   white-space: nowrap;
+}
+.sub-menu li{
+    /*height: 40px;*/
+    /*padding: 15px 30px 15px 0;*/
+    text-align: left;
+    background: inherit;
+
+
+}
+.sub-menu a {
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: inherit;
+    border-top: 1px solid white;
+    border-right: none !important;
+
+}
+.sub-menu li:last-child a{
+    border-bottom: none;
+}
+.sub-menu li:first-child a{
+    border-top: none;
+}
+
+.menu__box > li:hover ul.sub-menu{
+    display: block;
+    opacity: 1;
+    transform: scaleY(1);
+}
+li.menu-item-has-children{
+    position: relative;
+}
+.menu-item-has-children a:after {
+    content: "▼";
+    color: inherit;
+    margin-left: 10px;
+}
+
+.sub-menu > li > a:after{
+    content: "";
+}
+hr{
+    border: 1px solid white;
+    margin: 0 10px 30px 10px;
+}

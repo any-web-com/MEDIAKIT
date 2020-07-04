@@ -1,0 +1,46 @@
+@media screen and (max-width: 1024px){
+  :root{
+    --colspace: 60px; (через переменную задаю межколоночній интервал);
+  }
+  .container {
+    width: 900px;
+    margin: 0 auto;
+  }
+  .col-3{width: calc(100% / 2 - ( 1/2*1 * var(--colspace) ) );}
+  .col-4{width: calc(100% / 2 - ( 1/2*1 * var(--colspace) ) );}
+
+  header .social {
+    width: 100%;
+  }
+  .login-button a.RegSite{
+    margin-left: 20px;
+  }
+  .bunner{
+    height: auto;
+  }
+  .bunner h1{
+    line-height: 40px;
+  }
+  .strHed{
+    font-size: 1.2em;
+  }
+  .statistic  .justify-center{
+    justify-content: flex-start;
+  }
+  .statistic .justify-between{
+    justify-content: center !important;
+
+  }
+  .card-review{
+    margin-bottom: 20px;
+  }
+
+   .footer-widget{
+     margin-bottom: 20px;
+   }
+   .footer-credits{
+     justify-content: center;
+   }
+
+}
+     

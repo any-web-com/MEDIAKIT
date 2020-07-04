@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Подбор площадок</title>
+</head>
+<body>
+<header>
+    <div class="container ">
+        <div class="row justify-between hedInfo">
+            <!--------------------------------------->
+            <div class="row social justify-center">
+                <a class="row justify-center telegram " href="">
+                    <img src="img/telegramm_icon.png" alt="telegramm">
+                    <p class="center">Telegram</p>
+                </a>
+                <a class="row justify-center whatsapp" href="">
+                    <img src="img/whatsapp_icon.png" alt="whatsapp">
+                    <p class="center">Whatsapp</p>
+                </a>
+            </div>
+            <!--------------------------------------->
+            <div class="row justify-center strHed"> <p>Cервис дистрибьюции спонсорского контента</p></div>
+            <div class="row justify-center login-button">
+                <a class="inpSite" href="">Войти</a>
+                <button class="RegSite center login">Регистрация</button>
+            </div>
+        </div>
+
+    </div>
+    <!---------------------------------------------------------------->
+    <nav class="vw100">
+
+        <div class="container row justify-between hedInfo">
+            <!------------------------------------------>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#">Заказать</a></li>
+                    <li><a class="menu__item" href="#">О нас</a></li>
+                    <li><a class="menu__item" href="#">Кейсы</a></li>
+                    <li><a class="menu__item" href="blog.html">Блог</a></li>
+                    <li><a class="menu__item" href="contact.html">Контакты</a></li>
+                    <li><a class="row justify-center telegram " href="">
+                        <img src="img/telegramm_icon_white.png" alt="telegramm">
+                        <p class="center">Telegram</p></a></li>
+                    <li> <a class="row justify-center whatsapp" href="">
+                        <img src="img/whatsapp_icon_white.png" alt="whatsapp">
+                        <p class="center">Whatsapp</p></a></li>
+                </ul>
+            </div>
+            <h1 class="logoName">mediakit</h1>
+            <menu class="menu">
+                <a href="">Заказать</a>
+                <a href="">О нас</a>
+                <a href="">Кейсы</a>
+                <a href="blog.html">Блог</a>
+                <a href="contact.html">Контакты</a>
+            </menu>
+        </div>
+    </nav>
+</header>
+<!------------------------------------------------------------------------------------------------------------------->
+<main class="site_selection">
+   <!--------------------------------------------------->
+        <nav class="container row main_block_menu">
+            <ul class="row justify-center top_menu">
+                <li><a href="index.html">Главная</a></li>
+                <li class="active"><a href="site_selection.html">Подбор площадок</a></li>
+            </ul>
+        </nav>
+        <!--------------------------------------------------->
+        <div class="container row">
+            <h2 class="page-title">Подбор площадок</h2>
+        </div>
+       <!--------------------------------------------------->
+     <div class="container row justify-between">
+         <!----------------------------------------------->
+         <aside class="row aside such">
+             <div class="col col-1 select">
+                 <h4>Поиск</h4>
+                 <select class="col-1" size="1">
+                     <option value="" hidden disabled selected>домен, слово</option>
+                 </select>
+                 <p>Выполнить поиск по домену, слову</p>
+             </div>
+             <div class="col col-1 select">
+                 <h4>Регион</h4>
+                 <select class="col-1" size="1">
+                     <option value="" hidden disabled selected>США, Великобритания, Европа,</option>
+                 </select>
+                 <p>США, Великобритания, Европа,</p>
+             </div>
+             <div class="col col-1 select">
+                 <h4>Тип поста</h4>
+                 <select class="col-1" size="1">
+                     <option value="" hidden disabled selected>Все виды</option>
+                 </select>
+                 <p>Вид публикации. Например:статья, видео и т.д.</p>
+             </div>
+             <div class="col col-1 select">
+                 <h4>Язык</h4>
+                 <select class="col-1" size="1">
+                     <option value="" hidden disabled selected>домен, слово</option>
+                 </select>
+                 <p>Выберите язык площадки/публикации</p>
+             </div>
+             <div class="col col-1 select">
+                 <h4>Тематика (ниша)</h4>
+                 <select class="col-1" size="1">
+                     <option value="" hidden disabled selected>Бизнес, фармакалогия</option>
+                 </select>
+                 <p>Тематика площадок размещения</p>
+             </div>
+             <div class="col col-1 select">
+                 <h4>Трафик</h4>
+                 <select class="col-1" size="1">
+                     <option value="" hidden disabled selected>Более 1 млн/мес</option>
+                 </select>
+                 <p>Посещаемость площадки</p>
+             </div>
+             <div class="col col-1 select">
+                 <h4>Стоимость</h4>
+                 <select class="col-1" size="1">
+                     <option value="" hidden disabled selected>0.3$ - 0.5$</option>
+                 </select>
+                 <p>Стоимость размещения публикации</p>
+             </div>
+
+         </aside>
+
+         <!-------------------Cards------------------------->
+         <div class="row main_cards_container cards_selection">
+             <div class="row col-1 justify-between navigation">
+                 <ul class="row justify-center">
+                     <li>Рекомендуем</li>
+                     <li>Новые</li>
+                     <li>Цена</li>
+                     <li>Аудитория</li>
+                 </ul>
+                 <div class="row justify-center">
+                     <p>Всего:<span>1 478</span></p>
+                     <p>На странице:</p>
+                     <p class="row justify-center square">12</p>
+                     <p class="square row justify-center red" onclick="DisplayCards()">
+                         <img src="img/selection/red_sq.png" alt="red_sq">
+                     </p>
+                     <p class="square row justify-center" onclick="DisplayTable()">
+                         <img src="img/selection/line_menu.png" alt="">
+                     </p>
+                 </div>
+             </div>
+             <!------------------------------------>
+             <div class="row col-1 justify-between selection_cards">
+                 <div class="container col col-3 selection_card">
+                     <div class="img"></div>
+                     <h3 class="padding_h">Mediterraneo</h3>
+                     <p>www.mediterraneodigital.com</p>
+                     <div class="row justify-between">
+                         <div class="row justify-center info">
+                             <p>77$</p>
+                             <img src="img/selection/schedule.png" alt="">
+                             <p>510.9K</p>
+                         </div>
+                         <img src="img/selection/basket.png" alt="" class="padding_h">
+                         <div class="row justify-center article">Статья</div>
+                     </div>
+
+                 </div>
+                 <div class="container col col-3 selection_card">
+                     <div class="img"></div>
+                     <h3 class="padding_h">Mediterraneo</h3>
+                     <p>www.mediterraneodigital.com</p>
+                     <div class="row justify-between">
+                         <div class="row justify-center info">
+                             <p>77$</p>
+                             <img src="img/selection/schedule.png" alt="">
+                             <p>510.9K</p>
+                         </div>
+                         <img src="img/selection/basket.png" alt="" class="padding_h">
+                         <div class="row justify-center article">Статья</div>
+                     </div>
+
+                 </div>
+                 <div class="container col col-3 selection_card">
+                     <div class="img"></div>
+                     <h3 class="padding_h">Mediterraneo</h3>
+                     <p>www.mediterraneodigital.com</p>
+                     <div class="row justify-between">
+                         <div class="row justify-center info">
+                             <p>77$</p>
+                             <img src="img/selection/schedule.png" alt="">
+                             <p>510.9K</p>
+                         </div>
+                         <img src="img/selection/basket.png" alt="" class="padding_h">
+                         <div class="row justify-center article">Статья</div>
+                     </div>
+
+                 </div>
+                 <div class="container col col-3 selection_card">
+                     <div class="img"></div>
+                     <h3 class="padding_h">Mediterraneo</h3>
+                     <p>www.mediterraneodigital.com</p>
+                     <div class="row justify-between">
+                         <div class="row justify-center info">
+                             <p>77$</p>
+                             <img src="img/selection/schedule.png" alt="">
+                             <p>510.9K</p>
+                         </div>
+                         <img src="img/selection/basket.png" alt="" class="padding_h">
+                         <div class="row justify-center article">Статья</div>
+                     </div>
+
+                 </div>
+                 <div class="container col col-3 selection_card">
+                     <div class="img"></div>
+                     <h3 class="padding_h">Mediterraneo</h3>
+                     <p>www.mediterraneodigital.com</p>
+                     <div class="row justify-between">
+                         <div class="row justify-center info">
+                             <p>77$</p>
+                             <img src="img/selection/schedule.png" alt="">
+                             <p>510.9K</p>
+                         </div>
+                         <img src="img/selection/basket.png" alt="" class="padding_h">
+                         <div class="row justify-center article">Статья</div>
+                     </div>
+
+                 </div>
+                 <div class="container col col-3 selection_card">
+                     <div class="img"></div>
+                     <h3 class="padding_h">Mediterraneo</h3>
+                     <p>www.mediterraneodigital.com</p>
+                     <div class="row justify-between">
+                         <div class="row justify-center info">
+                             <p>77$</p>
+                             <img src="img/selection/schedule.png" alt="">
+                             <p>510.9K</p>
+                         </div>
+                         <img src="img/selection/basket.png" alt="" class="padding_h">
+                         <div class="row justify-center article">Статья</div>
+                     </div>
+
+                 </div>
+                 <div class="container col col-3 selection_card">
+                     <div class="img"></div>
+                     <h3 class="padding_h">Mediterraneo</h3>
+                     <p>www.mediterraneodigital.com</p>
+                     <div class="row justify-between">
+                         <div class="row justify-center info">
+                             <p>77$</p>
+                             <img src="img/selection/schedule.png" alt="">
+                             <p>510.9K</p>
+                         </div>
+                         <img src="img/selection/basket.png" alt="" class="padding_h">
+                         <div class="row justify-center article">Статья</div>
+                     </div>
+
+                 </div>
+                 <div class="container col col-3 selection_card">
+                     <div class="img"></div>
+                     <h3 class="padding_h">Mediterraneo</h3>
+                     <p>www.mediterraneodigital.com</p>
+                     <div class="row justify-between">
+                         <div class="row justify-center info">
+                             <p>77$</p>
+                             <img src="img/selection/schedule.png" alt="">
+                             <p>510.9K</p>
+                         </div>
+                         <img src="img/selection/basket.png" alt="" class="padding_h">
+                         <div class="row justify-center article">Статья</div>
+                     </div>
+
+                 </div>
+                 <div class="container col col-3 selection_card">
+                     <div class="img"></div>
+                     <h3 class="padding_h">Mediterraneo</h3>
+                     <p>www.mediterraneodigital.com</p>
+                     <div class="row justify-between">
+                         <div class="row justify-center info">
+                             <p>77$</p>
+                             <img src="img/selection/schedule.png" alt="">
+                             <p>510.9K</p>
+                         </div>
+                         <img src="img/selection/basket.png" alt="" class="padding_h">
+                         <div class="row justify-center article">Статья</div>
+                     </div>
+
+                 </div>
+                 <div class="container col col-3 selection_card">
+                     <div class="img"></div>
+                     <h3 class="padding_h">Mediterraneo</h3>
+                     <p>www.mediterraneodigital.com</p>
+                     <div class="row justify-between">
+                         <div class="row justify-center info">
+                             <p>77$</p>
+                             <img src="img/selection/schedule.png" alt="">
+                             <p>510.9K</p>
+                         </div>
+                         <img src="img/selection/basket.png" alt="" class="padding_h">
+                         <div class="row justify-center article">Статья</div>
+                     </div>
+
+                 </div>
+                 <div class="container col col-3 selection_card">
+                     <div class="img"></div>
+                     <h3 class="padding_h">Mediterraneo</h3>
+                     <p>www.mediterraneodigital.com</p>
+                     <div class="row justify-between">
+                         <div class="row justify-center info">
+                             <p>77$</p>
+                             <img src="img/selection/schedule.png" alt="">
+                             <p>510.9K</p>
+                         </div>
+                         <img src="img/selection/basket.png" alt="" class="padding_h">
+                         <div class="row justify-center article">Статья</div>
+                     </div>
+
+                 </div>
+                 <div class="container col col-3 selection_card">
+                     <div class="img"></div>
+                     <h3 class="padding_h">Mediterraneo</h3>
+                     <p>www.mediterraneodigital.com</p>
+                     <div class="row justify-between">
+                         <div class="row justify-center info">
+                             <p>77$</p>
+                             <img src="img/selection/schedule.png" alt="">
+                             <p>510.9K</p>
+                         </div>
+                         <img src="img/selection/basket.png" alt="" class="padding_h">
+                         <div class="row justify-center article">Статья</div>
+                     </div>
+
+                 </div>
+             </div>
+             <!-------------------------------------->
+         </div>
+
+         <!-------------------Table------------------------->
+         <div class="row col-2_3 table_selection hide">
+             <div class="row col-1 justify-between navigation">
+                 <ul class="row justify-center">
+                     <li>Рекомендуем</li>
+                     <li>Новые</li>
+                     <li>Цена</li>
+                     <li>Аудитория</li>
+                 </ul>
+                 <div class="row justify-center">
+                     <p>Всего:<span>1 478</span></p>
+                     <p>На странице:</p>
+                     <p class="row justify-center square">12</p>
+                     <p class="square row justify-center" onclick="DisplayCards()">
+                         <img src="img/selection/gray_sq.png" alt="red_sq">
+                     </p>
+                     <p class="square row justify-center red" onclick="DisplayTable()">
+                         <img src="img/selection/red_line_menu.png" alt="">
+                     </p>
+                 </div>
+             </div>
+             <!------------------------------------>
+             <div class="row col-1 justify-center selection_cards">
+                <table>
+                    <tr>
+                        <th>Адрес площадки</th>
+                        <th>Тип размещения</th>
+                        <th>Трафик</th>
+                        <th>Язык</th>
+                        <th>Стоимость</th>
+                        <th>Заказать</th>
+                    </tr>
+                    <tr>
+                        <td>www.mediterraneodigital.com</td>
+                        <td>статья</td>
+                        <td>510.9К</td>
+                        <td>fr</td>
+                        <td>77$</td>
+                        <td><img src="img/selection/gray_bascet.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>www.mediterraneodigital.com</td>
+                        <td>статья</td>
+                        <td>510.9К</td>
+                        <td>fr</td>
+                        <td>77$</td>
+                        <td><img src="img/selection/gray_bascet.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>www.mediterraneodigital.com</td>
+                        <td>статья</td>
+                        <td>510.9К</td>
+                        <td>fr</td>
+                        <td>77$</td>
+                        <td><img src="img/selection/gray_bascet.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>www.mediterraneodigital.com</td>
+                        <td>статья</td>
+                        <td>510.9К</td>
+                        <td>fr</td>
+                        <td>77$</td>
+                        <td><img src="img/selection/gray_bascet.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>www.mediterraneodigital.com</td>
+                        <td>статья</td>
+                        <td>510.9К</td>
+                        <td>fr</td>
+                        <td>77$</td>
+                        <td><img src="img/selection/gray_bascet.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>www.mediterraneodigital.com</td>
+                        <td>статья</td>
+                        <td>510.9К</td>
+                        <td>fr</td>
+                        <td>77$</td>
+                        <td><img src="img/selection/gray_bascet.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>www.mediterraneodigital.com</td>
+                        <td>статья</td>
+                        <td>510.9К</td>
+                        <td>fr</td>
+                        <td>77$</td>
+                        <td><img src="img/selection/gray_bascet.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>www.mediterraneodigital.com</td>
+                        <td>статья</td>
+                        <td>510.9К</td>
+                        <td>fr</td>
+                        <td>77$</td>
+                        <td><img src="img/selection/gray_bascet.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>www.mediterraneodigital.com</td>
+                        <td>статья</td>
+                        <td>510.9К</td>
+                        <td>fr</td>
+                        <td>77$</td>
+                        <td><img src="img/selection/gray_bascet.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>www.mediterraneodigital.com</td>
+                        <td>статья</td>
+                        <td>510.9К</td>
+                        <td>fr</td>
+                        <td>77$</td>
+                        <td><img src="img/selection/gray_bascet.png" alt=""></td>
+                    </tr>
+                </table>
+             </div>
+             <!-------------------------------------->
+         </div>
+     </div>
+</main>
+<footer>
+    <div class="container col justify-between footer_main">
+
+        <div class="container row justify-between footer-social">
+            <h3>mediakit</h3>
+            <div class="row social-widget">
+                <p>Подписаться:</p>
+                <div class="row social justify-center">
+                    <a class="row justify-center telegram " href="">
+                        <img src="img/telegramm_icon.png" alt="telegramm">
+                        <p class="center">Telegram</p>
+                    </a>
+                    <a class="row justify-center whatsapp" href="">
+                        <img src="img/whatsapp_icon.png" alt="whatsapp">
+                        <p class="center">Whatsapp</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------>
+        <div class="container row justify-around footer-columns">
+            <div class="col col-4 footer-widget">
+                <p class="title">О системе</p>
+                <nav class="col footer-nav">
+                    <a href="#">Рекламодателю</a>
+                    <a href="#">Владельцу сайта</a>
+                    <a href="#">Партнёрам</a>
+                    <a href="#">Связаться с нами</a>
+                </nav>
+            </div>
+
+            <div class="col col-4 footer-widget">
+                <p class="title">F.A.Q</p>
+                <nav class="col footer-nav ">
+                    <a href="#">Общее</a>
+                    <a href="#">Заказчику</a>
+                    <a href="#">Владельцу площадки</a>
+                </nav>
+            </div>
+
+            <div class="col col-4 footer-widget">
+                <p class="title">Инструменты</p>
+                <nav class="col footer-nav ">
+                    <a href="#">SEO чеклист</a>
+                    <a href="#">Вебинары</a>
+                    <a href="#">Проверка ответа сервера</a>
+                    <a href="#">Проверка занятости домена</a>
+                </nav>
+            </div>
+
+            <div class="col col-4 footer-widget">
+                <p class="title">О системе</p>
+                <nav class="col footer-nav ">
+                    <a href="#">Рекламодателю</a>
+                    <a href="#">Владельцу сайта</a>
+                    <a href="#">Партнёрам</a>
+                    <a href="#">Связаться с нами</a>
+                </nav>
+            </div>
+        </div>
+        <!------------------------------------------>
+
+        <div class="container row justify-between footer-credits">
+            <nav class="row">
+                <a href="#">Справка</a>
+                <a href="#">Конфиденциальность</a>
+                <a href="#">Оферта</a>
+                <a href="#">Соглашение</a>
+                <a href="#">Платежная политика</a>
+            </nav>
+            <div>
+                <img src="img/paypal.png" alt="">
+                <img src="img/payoneer.png" alt="">
+                <img src="img/liqpay.png" alt=""></div>
+        </div>
+    </div>
+</footer>
+<!====================================================================================================>
+<div class="reg_container col justify-center reg_container_close">
+    <div id="reg_form" class="row justify-center">
+        <div class="close_button">
+            <span><img src="img/close_gray.png" alt="close"></span>
+        </div>
+        <div class="main_form_container">
+            <div class="header col justify-center center ">
+                <h2>mediakit</h2>
+                <p>Cервис дистрибьюции спонсорского контента</p>
+            </div>
+            <form action="#" class="left col">
+                <div class="form">
+                    <h3>Регистрация</h3>
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" placeholder="Имя">
+                    <label for="surname">Фамилия</label>
+                    <input type="text" id="surname" name="name" placeholder="Фамилия">
+                    <label for="E-mail">Фамилия</label>
+                    <input type="email" id="E-mail" name="E-mail" placeholder="E-mail">
+                    <label for="currency">Фамилия</label>
+                    <input type="text" id="currency" name="currency" placeholder="Валюта аккаунта">
+                    <label for="phone">Телефон</label>
+                    <div class="row justify-center">
+                        <select class="cod" size="1" >
+                            <option value="" hidden disabled selected>+38</option>
+                        </select>
+                        <input type="number" id="phone" name="phone" class="phone" placeholder="95 123 45 67">
+                    </div>
+                    <p>Выберите свою роль</p>
+                    <div class="row justify-between center arr_radio">
+                        <div class="row justify-center radio">
+                            <input type="radio" id="author"><label for="author">Автор</label>
+                        </div>
+                        <div class="row justify-center radio">
+                            <input type="radio" id="bayer"><label for="bayer">Покупатель</label>
+                        </div>
+                    </div>
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" placeholder="Пароль">
+                </div>
+                <input type="submit" value="Завершить регистрацию">
+            </form>
+            <div class="col justify-center reg_info">
+                <p class="center">Нажимая "Зарегистрироваться", вы подтверждаете, что ознакомлены, полностью согласны и принимаете условия <a href="#">Правила использования сайта</a></p>
+                <p class="center">Уже есть аккаунт? <a href="#">Войдите</a></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

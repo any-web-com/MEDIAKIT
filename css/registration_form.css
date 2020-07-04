@@ -1,0 +1,200 @@
+.reg_container{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    font-size: 12px !important;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999;
+
+
+}
+.reg_container_close{
+    position: absolute;
+    top: -200%;
+    transition:  0.5s linear;
+
+}
+.reg_container_open{
+    top: 0 !important;
+    /*position: absolute;*/
+    position: fixed !important;
+    transition:  0.5s linear;
+    overflow-y: scroll !important;
+
+
+}
+#reg_form{
+    width: 800px;
+    /*height: 90%;*/
+    background: #FBFBFB;
+    padding: 30px;
+    width: 800px !important;
+    margin: 5px auto;
+    overflow-y: scroll !important;
+
+}
+.main_form_container{
+  width: 350px;
+}
+#reg_form .header{
+    font-family: "Publica Play Regular", sans-serif !important;
+    margin: 20px auto;
+}
+#reg_form .header h2{
+    font-size: 4em;
+    color: #E84A38 !important;
+    margin: 0  auto 10px;
+}
+.main_form_container .header p{
+    font-size: 1.2em !important;
+    line-height: 14px;
+    color: black;
+    margin: 10px auto;
+}
+#reg_form .form{
+    width: 100%;
+    background: white;
+    padding: var(--marginspace);
+}
+.form h3{
+    font-family: "Publica Play Regular", sans-serif;
+    font-weight: 500;
+    font-size: 1.7em;
+    line-height: 24px;
+}
+.form label, .form p{
+    font-family: Roboto;
+    font-size: 1.3em;
+    line-height: 17px;
+    margin-top: 10px;
+    color: #5E5E5E;
+}
+.form input,
+.form input[placeholder]{
+    font-family: Roboto;
+    font-size: 1.4em;
+    line-height: 19px;
+    color: #5E5E5E;
+}
+.form input{
+    width: 100%;
+    border: 1px solid #E9E9E9;
+    padding: 15px;
+    margin: 10px auto;
+}
+.form .cod{
+    width: 30%;
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px solid #E9E9E9;
+    padding: 15px;
+}
+.form .phone{
+    width: 70%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: url("../img/blog/arrowDown.png") no-repeat 95% center;
+    background-size: 15px 15px;
+    outline: 0;
+    color: #5E5E5E;
+    font-size: 1.4em;
+    line-height: 19px;
+}
+.form .radio{
+    width: auto;
+    text-align: left;
+}
+.radio:first-child{
+    margin-left: 0;
+    margin-right: auto;
+}
+.radio input{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+.radio label{
+    margin-top: 0;
+    margin-left: 10px;
+}
+.arr_radio{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#reg_form form input[type=submit]{
+    width: 100%;
+    background: #EB5B5B;
+    padding: 15px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.4em;
+    font-family: Roboto;
+    line-height: 19px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.reg_info p:first-child{
+    font-family: "Publica Play Regular", sans-serif;
+    font-size: 1.2em;
+}
+.reg_info p:last-child{
+    font-family: "Publica Play Regular", sans-serif;
+    font-size: 1.4em;
+}
+.close_button{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.close_button span{
+    display: block;
+    position: relative;
+    top: 2%;
+    left: 98%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.close_button span img{
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1024px) {
+    .main_form_container{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 770px) {
+    .reg_container{
+        padding: 0;
+    }
+    #reg_form{
+        width: 100% !important;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main_form_container{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .main_form_container{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 420px) {
+
+}

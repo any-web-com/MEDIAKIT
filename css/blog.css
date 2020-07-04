@@ -1,0 +1,212 @@
+:root{
+    --marginspace: 30px;
+}
+.blog{
+    font-size: 12px;
+}
+.main_block_menu > ul{
+    list-style: none;
+    margin: var(--marginspace) 0;
+    padding: 0;
+}
+.main_block_menu > ul li{
+    margin-right: 5px;
+    padding: 0 10px;
+    text-decoration: underline;
+}
+.main_block_menu > ul li:not(:last-child) {
+    border-right: 2px solid  #706F6F;;
+}
+.main_block_menu > ul li a{
+    font-family: "Product Sans Regular";
+    font-size: 16px;
+    line-height: 19px;
+    color: #706F6F;
+}
+.main_block_menu > ul li.active{
+    text-decoration: none;
+
+}
+.main_block_menu > ul li.active a{
+    color: #1D1D1B;
+}
+.page-title{
+    font-size: 4em;
+    font-family: "Product Sans Bold";
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: var(--marginspace);
+}
+.padding_h{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.such{
+    margin-bottom: var(--marginspace) !important;
+}
+.such > input,
+.such > select{
+    height: 50px;
+    color: #5E5E5E;
+    font-family: Roboto;
+    font-size: 1.2em;
+    line-height: 19px;
+    border: 1px solid #E9E9E9;
+    padding: 0 10px;
+    /*margin: 20px 0;*/
+}
+.such select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: url("../img/blog/arrowDown.png") no-repeat 95% center;
+    background-size: 20px 20px;
+    outline: 0;
+}
+.blog_card{
+    border: 1px solid #E9E9E9;
+    margin-top: var(--marginspace) !important;
+    margin-bottom: var(--marginspace) !important;
+    padding-bottom: var(--marginspace);
+}
+.blog_card > img:first-child{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    /*margin-left: 20px;*/
+    /*margin-right: 5px;*/
+}
+
+.blog_card > img:last-child{
+    height: 15px;
+    width: 100px;
+    margin: 0;
+}
+.blog_card h3{
+    font-family: "Product Sans Bold";
+    font-size: 2em;
+    line-height: 30px;
+    margin: 0 auto var(--marginspace) 0;
+}
+
+.img_h20{
+    height: 15px;
+    width: auto;
+}
+.name{
+    color: #EB5B5B;
+    font-size: 1.1em;
+    font-family: Roboto;
+    font-weight: bold;
+    line-height: 17px;
+    margin-top: var(--marginspace);
+    margin-bottom: var(--marginspace);
+}
+.tags{
+    margin-top: var(--marginspace);
+    margin-bottom: var(--marginspace);
+}
+.tags ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.tags ul li{
+    height: 50px;
+    width: 50px;
+    border: 1px solid #E9E9E9;
+    margin: 0 5px;
+    font-family: Roboto;
+    font-size: 1.2em;
+    line-height: 19px;
+    cursor: pointer;
+}
+.tag_active{
+    background: #EB5B5B;
+}
+.img_block img:first-child{
+    margin-left: 10px;
+}
+.img_block{
+    align-self: flex-start !important;
+    margin-right: 5px;
+}
+.img_info p{
+    padding: 0;
+    margin: 0 auto auto 5px;
+}
+footer{
+    margin-top: var(--marginspace);
+}
+.stars{
+    margin: 0;
+}
+.img_info img {
+    height: 15px;
+    width: auto;
+    margin-left: 10px;
+}
+.stars img{
+    margin: 0;
+}
+
+@media screen and (max-width: 770px) {
+    :root{
+        --marginspace: 20px;
+    }
+    .blog_card h3 {
+         font-size: 1.7em !important;
+        line-height: 25px;
+
+    }
+    .img_info{
+        width: 100%;
+        justify-content: flex-start!important;
+        align-items: flex-start;
+    }
+    .img_block{
+        align-self: flex-start;
+    }
+    .main_block_menu > ul li a{
+        font-size: 1.4em;
+    }
+    .img_info img {
+         margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    :root{
+        --marginspace: 15px;
+    }
+    .img_h20{
+        height: 10px !important;
+        margin-bottom: var(--marginspace);
+    }
+    .blog_card h3{
+        font-size: 1.8em;
+        line-height: 20px;
+    }
+    .tags ul li {
+        height: 40px;
+        width: 40px;
+    }
+    .blog_card{
+        height: auto !important;
+    }
+
+
+}
+@media screen and (max-width: 500px) {
+    .such input{
+        margin-bottom: var(--marginspace);
+    }
+
+}
+@media screen and (max-width: 420px) {
+
+}
+
+

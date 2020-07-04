@@ -1,0 +1,107 @@
+@media screen and (max-width: 770px) {
+  .container {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .hamburger-menu{
+    display: block !important;
+  }
+  header menu,
+  header .social{
+    display: none;
+  }
+  header nav{
+    width: 85px !important;
+  }
+  section {
+    padding: 30px 0;
+  }
+  header .strHed{
+    width: 100% !important;
+  }
+  .hedInfo{
+    padding: 15px 0;
+
+  }
+  header .login-button{
+    width: 100% !important;
+
+  }
+  .logoName{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .bunner h1 {
+    font-size: 1.6em;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  .bunner a.RegSite,
+  .bunner button.RegSite{
+    margin-top: 30px;
+  }
+
+  main{
+    font-family:'Product Sans Regular';
+    font-size: 20px;
+  }
+  .threeIcoms > .col > h2 {
+    font-size: 1.8em !important;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .threeIcoms > .col > h3 {
+    margin-bottom: 15px !important;
+  }
+  .card img{
+    margin: 15px auto;
+  }
+  .card h3{
+    margin-bottom: 15px;
+  }
+  .card p{
+    margin-bottom: 5px;
+  }
+  .maps h2{
+    font-size: 1.6em;
+    line-height: 40px;
+    margin: 0 auto 20px 0;
+  }
+  .maps ul{
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .mapsButton{
+    margin-top: 0 !important;
+  }
+  .section-title h2{
+    font-size: 1.6em;
+    line-height: 40px;
+    margin: 0 auto 15px auto;
+  }
+  .section-title p{
+    margin-bottom: 15px;
+  }
+  .card-review{
+    margin: 0 auto 20px auto;
+  }
+  .footer-social{
+    padding: 5px 0;
+  }
+  .footer-widget{
+    margin-bottom: 10px;
+  }
+  .footer-nav{
+    margin: 5px auto 5px 0;
+  }
+  .footer-nav a {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+  .footer-credits{
+    justify-content: center !important;
+  }
+
+}
